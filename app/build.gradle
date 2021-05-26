@@ -3,17 +3,17 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'org.ajoberstar.grgit'
 
-import org.ajoberstar.grgit.Grgit
+//import org.ajoberstar.grgit.Grgit
+//
+//static def getPrefix() {
+//    def git = Grgit.open()
+//    def gitBranchName = git.branch.current.name.replaceAll(/(.*)\//, '')
+//    def date = new Date()
+//    def formattedDate = date.format('yyyyMMddHHmm')
+//    return formattedDate + "_" + gitBranchName + "_" + "app"
+//}
 
-static def getPrefix() {
-    def git = Grgit.open()
-    def gitBranchName = git.branch.current.name.replaceAll(/(.*)\//, '')
-    def date = new Date()
-    def formattedDate = date.format('yyyyMMddHHmm')
-    return formattedDate + "_" + gitBranchName + "_" + "app"
-}
-
-project.archivesBaseName = getPrefix()
+//project.archivesBaseName = getPrefix()
 
 android {
     compileSdkVersion 29
